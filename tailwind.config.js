@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          soft-orange:"hsl(35, 77%, 62%)",
-          soft-red:"hsl(5, 85%, 63%)"
+          "soft-orange":"hsl(35, 77%, 62%)",
+          "soft-red":"hsl(5, 85%, 63%)"
         },
         neutral: {
           "off-white": "hsl(36, 100%, 99%)",
@@ -16,11 +16,11 @@ module.exports = {
         }
       },
       typography: {
-        body-copy: "15px",
+        "body-copy": "15px",
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
+        "inter": ['Inter', 'sans-serif'],
     }
   },
   plugins: [],
-};
+}};
