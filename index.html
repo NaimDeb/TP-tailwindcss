@@ -52,15 +52,22 @@
     </nav>
   </header>
 
-  <main class="p-4 lg:p-8">
-    <section id="Home" class="flex flex-col gap-3">
-      <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes" />
-      <!-- Ajouter autre image -->
+  <main class="p-4 md:p-8 lg:p-16 xl:p-32">
 
-      <h1 class="text-[46px] leading-none font-bold text-neutral-very-dark-blue">
+  <div class="xl:flex">
+    <section id="Home" class="flex flex-col gap-3 xl:w-[90%]">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes" class="lg:hidden"/>
+      <img src="./assets/images/image-web-3-desktop.jpg" alt="image de cubes" class="max-lg:hidden"/>
+
+      <div class="flex gap-3 max-md:flex-col lg:flex-auto">
+
+      <h1 class="text-[46px] leading-none font-bold text-neutral-very-dark-blue lg:w-1/2 lg:text[70px]">
         The Bright Future of Web 3.0?
       </h1>
 
+
+
+      <div class="lg:w-1/2 flex flex-col gap-3">
       <p class="text-neutral-dark-grayish-blue">
         We dive into the next evolution of the web that claims to put the
         power of the platforms back into the hands of the people. But is it
@@ -70,9 +77,14 @@
       <a href="#"
         class="bg-primary-red w-40 px-6 py-3 my-3 text-sm font-bold tracking-[4px] text-neutral-off-white text-nowrap sm:w-75 md:w-90">READ
         MORE</a>
-    </section>
 
-    <section id="new" class="my-5">
+      </div>
+    </div>
+    </section>
+    
+
+    <!-- Section New -->
+    <section id="new" class="max-xl:my-5 xl:w-[25%]">
 
 
       <div class="bg-neutral-very-dark-blue flex flex-col gap-5 p-5">
@@ -102,7 +114,7 @@
         </article>
       </div>
     </section>
-
+  </div>
     <section id="articles" class="flex max-lg:flex-col gap-[10%] lg:flex-auto">
 
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max ">
