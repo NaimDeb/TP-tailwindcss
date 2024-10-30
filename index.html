@@ -1,124 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./css/output.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>DevFoxie | News homepage</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./css/output.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <header class="w-full p-4">
-      <nav class="flex justify-between">
-        <img src="./assets/images/logo.svg" alt="logo W" class="w-12">
+  <title>DevFoxie | News homepage</title>
 
-        <!-- Bouton menu hamburger -->
-        <button
-          data-collapse-toggle="navbar-hamburger"
-          type="button"
-          aria-controls="navbar-hamburger"
-          aria-expanded="false"
-        >
-          <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
-            <g fill="#00001A" fill-rule="evenodd">
-              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
-              <path d="M0 0h40v3H0z" />
-            </g>
-          </svg>
-        </button>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
 
-        <div class="hidden w-full">
-          <ul>
-            <li>Home</li>
-            <li>New</li>
-            <li>Popular</li>
-            <li>Trending</li>
-            <li>Categories</li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
 
-    <main class="p-4">
+<body>
+  <header class="w-full p-4">
+    <nav class="flex justify-between">
+      <img src="./assets/images/logo.svg" alt="logo W" class="w-12" />
 
+      <!-- Bouton menu hamburger -->
+      <button data-collapse-toggle="navbar-hamburger" type="button" aria-controls="navbar-hamburger"
+        aria-expanded="false">
+        <svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#00001A" fill-rule="evenodd">
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </g>
+        </svg>
+      </button>
 
-    <section id="Home" class=" flex flex-col gap-3">
-      <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes">
+      <div class="hidden w-full">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="p-4">
+    <section id="Home" class="flex flex-col gap-3">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes" />
       <!-- Ajouter autre image -->
 
+      <h1 class="text-[46px] leading-none font-bold text-neutral-very-dark-blue">
+        The Bright Future of Web 3.0?
+      </h1>
 
-      <h1 class="text-[46px] leading-none font-bold text-neutral-very-dark-blue">The Bright Future of Web 3.0?</h1>
+      <p class="text-neutral-dark-grayish-blue">
+        We dive into the next evolution of the web that claims to put the
+        power of the platforms back into the hands of the people. But is it
+        really fulfilling its promise?
+      </p>
 
-      <p class="text-neutral-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of
-      the platforms back into the hands of the people. But is it really fulfilling
-      its promise?</p>
-      
-      <a href="#" class="bg-primary-red w-1/2 px-6 py-3 my-3 text-sm font-bold tracking-[4px] text-neutral-off-white text-nowrap">READ MORE</a>
-
+      <a href="#"
+        class="bg-primary-red w-1/2 px-6 py-3 my-3 text-sm font-bold tracking-[4px] text-neutral-off-white text-nowrap">READ
+        MORE</a>
     </section>
 
-    <section id="new">
-    
-      <p>New Hydrogen VS Electric Cars</p>
-      <p>Will hydrogen-fueled
-      cars ever catch up to EVs?</p>
-      <hr/>
-      
-      <p>The Downsides of AI Artistry What are the</p>
-      <p>possible adverse effects of on-demand AI image generation?</p>
-      
-      <p>Is VC Funding</p>
-      <p>Drying Up? Private funding by VC firms is down 50% YOY. We take a look at
-      what that means.</p>
-    
+    <section id="new" class="my-5">
+
+
+      <div class="bg-neutral-very-dark-blue flex flex-col gap-5 p-5">
+
+        <h2 class="text-primary-orange text-3xl font-bold mb-5">New</h2>
+
+        <article class="flex flex-col gap-3 mb-2">
+          <h3 class="font-bold text-xl text-neutral-off-white">Hydrogen VS Electric Cars</h3>
+          <p class="text-neutral-grayish-blue font-thin">Will hydrogen-fueled cars ever catch up to EVs?</p>
+
+        </article>
+        <hr class="w-full m-auto h-px border-neutral-dark-grayish-blue" />
+
+        <article class="flex flex-col gap-3 mb-2">
+          <h3 class="font-bold text-xl text-neutral-off-white">The Downsides of AI Artistry</h3>
+          <p class="text-neutral-grayish-blue font-thin">What are the possible adverse effects of on-demand AI image generation?</p>
+
+        </article>
+        <hr class="w-full m-auto h-px border-neutral-dark-grayish-blue" /> 
+        <article class="flex flex-col gap-3 mb-2">
+          <h3 class="font-bold text-xl text-neutral-off-white">Is VC Funding Drying Up?</h3>
+          <p class="text-neutral-grayish-blue font-thin">
+            Private funding by VC firms is down 50% YOY. We take a
+            look at what that means.
+          </p>
+
+        </article>
+      </div>
     </section>
-
-
 
     <section id="articles">
-
       <p>01 Reviving Retro PCs</p>
       <p>What happens when old PCs are given modern upgrades?</p>
       <p>02 Top 10 Laptops of 2022</p>
       <p>Our best picks for various needs and budgets.</p>
       <p>03 The Growth of Gaming</p>
       <p>How the pandemic has sparked fresh opportunities.</p>
-
     </section>
+  </main>
 
-    
-
-    </main>
-
-
-    <footer>
-
+  <footer>
     <div class="attribution">
       Challenge by
-      <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded by
-      <a href="#">Naim Deb</a>.
+      <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded
+      by <a href="#">Naim Deb</a>.
     </div>
+  </footer>
+</body>
 
-    </footer>
-
-  </body>
 </html>
