@@ -24,10 +24,10 @@
   </style>
 </head>
 
-<body class="max-w-full">
-  <header class="p-4">
-    <nav class="flex justify-between">
-      <img src="./assets/images/logo.svg" alt="logo W" class="w-12" />
+<body class="max-w-full p-4 md:p-8 lg:p-16 xl:p-32 bg-neutral-off-white font-body">
+  <header class="mb-8">
+    <nav class="flex justify-between items-center">
+      <img src="./assets/images/logo.svg" alt="logo W" class="w-12 xl:w-20" />
 
       <!-- Bouton menu hamburger -->
       <button data-collapse-toggle="navbar-hamburger" type="button" aria-controls="navbar-hamburger"
@@ -40,34 +40,35 @@
         </svg>
       </button>
 
-      <div class="hidden w-full">
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+      <div class="hidden w-full lg:flex">
+        <ul class="text-lg lg:flex gap-10 text-neutral-dark-grayish-blue">
+          <a><Home href="#">Home</a></li>
+          <a><New href="#">New</a></li>
+          <a><Popular href="#">Popular</a></li>
+          <a><Trending href="#">Trending</a></li>
+          <a><Categories href="#">Categories</a></li>
         </ul>
       </div>
+
     </nav>
   </header>
 
-  <main class="p-4 md:p-8 lg:p-16 xl:p-32">
+  <main class="">
 
-  <div class="xl:flex">
-    <section id="Home" class="flex flex-col gap-3 xl:w-[90%]">
+  <section class="xl:flex xl:gap-5 lg:justify-between">
+    <article id="Home" class="flex flex-col gap-3 lg:w-[50vw] xl:w-[60vw]">
       <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes" class="lg:hidden"/>
       <img src="./assets/images/image-web-3-desktop.jpg" alt="image de cubes" class="max-lg:hidden"/>
 
       <div class="flex gap-3 max-md:flex-col lg:flex-auto">
 
-      <h1 class="text-[46px] leading-none font-bold text-neutral-very-dark-blue lg:w-1/2 lg:text[70px]">
+      <h1 class="text-[46px] leading-none font-extrabold text-neutral-very-dark-blue lg:w-1/2 lg:text[70px] md:w-1/2">
         The Bright Future of Web 3.0?
       </h1>
 
 
 
-      <div class="lg:w-1/2 flex flex-col gap-3">
+      <div class="lg:w-1/2 flex flex-col gap-3 md:w-[50%]">
       <p class="text-neutral-dark-grayish-blue">
         We dive into the next evolution of the web that claims to put the
         power of the platforms back into the hands of the people. But is it
@@ -75,19 +76,19 @@
       </p>
 
       <a href="#"
-        class="bg-primary-red w-40 px-6 py-3 my-3 text-sm font-bold tracking-[4px] text-neutral-off-white text-nowrap sm:w-75 md:w-90">READ
+        class="bg-primary-red w-40 px-6 py-3 my-3 text-sm font-bold tracking-[4px] text-neutral-off-white text-nowrap sm:w-75 md:w-90 hover:bg-neutral-very-dark-blue">READ
         MORE</a>
 
       </div>
     </div>
-    </section>
+    </article>
     
 
     <!-- Section New -->
-    <section id="new" class="max-xl:my-5 xl:w-[25%]">
+    <section id="new" class="max-xl:my-5 xl:w-[25%] xl:mb-10">
 
 
-      <div class="bg-neutral-very-dark-blue flex flex-col gap-5 p-5">
+      <div class="bg-neutral-very-dark-blue flex flex-col gap-5 p-5 h-full">
 
         <h2 class="text-primary-orange text-3xl font-bold mb-5">New</h2>
 
@@ -114,32 +115,34 @@
         </article>
       </div>
     </section>
-  </div>
-    <section id="articles" class="flex max-lg:flex-col gap-[10%] lg:flex-auto">
+  </section>
+
+  <!-- Sectoin articles -->
+    <section id="articles" class="flex max-lg:flex-col gap-[10%] lg:flex-auto lg:mt-5 lg:gap-5">
 
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max ">
         <img src="./assets/images/image-retro-pcs.jpg" alt="image de pc retros" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">01</p>
-          <p class="font-bold text-neutral-very-dark-blue text-lg">Reviving Retro PCs</p>
+          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Reviving Retro PCs</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">What happens when old PCs are given modern upgrades?</p>
         </div>
       </article>
 
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max">
         <img src="./assets/images/image-top-laptops.jpg" alt="image de clavier" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">02</p>
-          <p class="font-bold text-neutral-very-dark-blue text-lg">Top 10 Laptops of 2022</p>
+          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Top 10 Laptops of 2022</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">Our best picks for various needs and budgets.</p>
         </div>
       </article>
 
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max">
         <img src="./assets/images/image-gaming-growth.jpg" alt="image de manette" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">03</p>
-          <p class="font-bold text-neutral-very-dark-blue text-lg">The Growth of Gaming</p>
+          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">The Growth of Gaming</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">How the pandemic has sparked fresh opportunities.</p>
         </div>
       </article>
@@ -149,7 +152,7 @@
 
   </main>
 
-  <footer>
+  <footer class="lg:mt-10">
     <div class="attribution">
       Challenge by
       <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded
