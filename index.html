@@ -26,7 +26,7 @@
 
 <body class="max-w-full p-4 md:p-8 lg:p-16 xl:p-32 bg-neutral-off-white font-body">
   <header class="mb-8">
-    <nav class="flex justify-between items-center">
+    <nav class="flex justify-between gap-[50%]">
       <img src="./assets/images/logo.svg" alt="logo W" class="w-12 xl:w-20" />
 
       <!-- Bouton menu hamburger -->
@@ -42,11 +42,11 @@
 
       <div class="hidden w-full lg:flex">
         <ul class="text-lg lg:flex gap-10 text-neutral-dark-grayish-blue">
-          <a><Home href="#">Home</a></li>
-          <a><New href="#">New</a></li>
-          <a><Popular href="#">Popular</a></li>
-          <a><Trending href="#">Trending</a></li>
-          <a><Categories href="#">Categories</a></li>
+          <a href="#" class="hover:text-primary-orange">Home</a></li>
+          <a href="#" class="hover:text-primary-orange">New</a></li>
+          <a href="#" class="hover:text-primary-orange">Popular</a></li>
+          <a href="#" class="hover:text-primary-orange">Trending</a></li>
+          <a href="#" class="hover:text-primary-orange">Categories</a></li>
         </ul>
       </div>
 
@@ -55,8 +55,8 @@
 
   <main class="">
 
-  <section class="xl:flex xl:gap-5 lg:justify-between">
-    <article id="Home" class="flex flex-col gap-3 lg:w-[50vw] xl:w-[60vw]">
+  <section class="lg:flex lg:gap-5 lg:justify-between">
+    <article id="Home" class="flex flex-col gap-3 lg:w-full">
       <img src="./assets/images/image-web-3-mobile.jpg" alt="image de cubes" class="lg:hidden"/>
       <img src="./assets/images/image-web-3-desktop.jpg" alt="image de cubes" class="max-lg:hidden"/>
 
@@ -85,34 +85,40 @@
     
 
     <!-- Section New -->
-    <section id="new" class="max-xl:my-5 xl:w-[25%] xl:mb-10">
+    <section id="new" class="max-lg:my-5 lg:w-[25%] xl:mb-10">
 
 
       <div class="bg-neutral-very-dark-blue flex flex-col gap-5 p-5 h-full">
 
         <h2 class="text-primary-orange text-3xl font-bold mb-5">New</h2>
-
+        
+        <a href="#" class="group">
         <article class="flex flex-col gap-3 mb-2">
-          <h3 class="font-bold text-xl text-neutral-off-white">Hydrogen VS Electric Cars</h3>
+          <h3 class="font-bold text-xl group-hover:text-primary-orange text-neutral-off-white">Hydrogen VS Electric Cars</h3>
           <p class="text-neutral-grayish-blue font-thin">Will hydrogen-fueled cars ever catch up to EVs?</p>
-
         </article>
+        </a>
+
         <hr class="w-full m-auto h-px border-neutral-dark-grayish-blue" />
 
+        <a href="#" class="group">
         <article class="flex flex-col gap-3 mb-2">
-          <h3 class="font-bold text-xl text-neutral-off-white">The Downsides of AI Artistry</h3>
+          <h3 class="font-bold text-xl group-hover:text-primary-orange text-neutral-off-white">The Downsides of AI Artistry</h3>
           <p class="text-neutral-grayish-blue font-thin">What are the possible adverse effects of on-demand AI image generation?</p>
-
         </article>
+        </a>
+
         <hr class="w-full m-auto h-px border-neutral-dark-grayish-blue" /> 
+
+        <a href="#" class="group">
         <article class="flex flex-col gap-3 mb-2">
-          <h3 class="font-bold text-xl text-neutral-off-white">Is VC Funding Drying Up?</h3>
+          <h3 class="font-bold text-xl group-hover:text-primary-orange text-neutral-off-white">Is VC Funding Drying Up?</h3>
           <p class="text-neutral-grayish-blue font-thin">
             Private funding by VC firms is down 50% YOY. We take a
             look at what that means.
           </p>
-
         </article>
+        </a>
       </div>
     </section>
   </section>
@@ -120,32 +126,39 @@
   <!-- Sectoin articles -->
     <section id="articles" class="flex max-lg:flex-col gap-[10%] lg:flex-auto lg:mt-5 lg:gap-5">
 
+
+      <a href="#" class="group">
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max ">
         <img src="./assets/images/image-retro-pcs.jpg" alt="image de pc retros" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
         <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">01</p>
-          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Reviving Retro PCs</a>
+          <a href="#" class=" group-hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Reviving Retro PCs</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">What happens when old PCs are given modern upgrades?</p>
         </div>
       </article>
+      </a>
 
+      <a href="#" class="group">
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max">
         <img src="./assets/images/image-top-laptops.jpg" alt="image de clavier" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
         <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">02</p>
-          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Top 10 Laptops of 2022</a>
+          <a href="#" class=" group-hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">Top 10 Laptops of 2022</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">Our best picks for various needs and budgets.</p>
         </div>
       </article>
+      </a>
 
+  <a href="#" class="group">      
       <article class="flex space-x-[3%] lg:size-[25%] lg:w-max">
         <img src="./assets/images/image-gaming-growth.jpg" alt="image de manette" class="size-[100px] md:size-[150px] object-cover lg:size-[175px] lg:h-[175px]">
         <div class="flex flex-col gap-2 lg:justify-between lg:py-5">
           <p class="text-neutral-grayish-blue text-4xl font-bold">03</p>
-          <a href="#" class=" hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">The Growth of Gaming</a>
+          <a href="#" class=" group-hover:text-primary-red font-bold text-neutral-very-dark-blue text-lg">The Growth of Gaming</a>
           <p class="text-neutral-dark-grayish-blue lg:text-sm">How the pandemic has sparked fresh opportunities.</p>
         </div>
       </article>
+      </a>
 
     </section>
 
